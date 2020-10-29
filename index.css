@@ -21,7 +21,7 @@ img,
 }
 .header{
     font-family: 'Patrick Hand SC', cursive;
-    padding: 30px;
+    padding: 10px;
     font-size: 50px;
     font-weight: bold;
 }
@@ -50,6 +50,25 @@ img,
     border-radius: 6px;
     color: #5f5f5f;
 }
-.name-input #player-name{
+.name-input .player-name{
     height: 30px;
+}
+.remov{
+    opacity:0;
+    transition: 2s;
+}
+.player-name::placeholder{
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.player{
+    opacity: 1;
+    transition: 3s;
+}
+.player p{
+    text-transform: capitalize;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0px;
+    font-family: 'Patrick Hand SC', cursive;
 }
