@@ -12,7 +12,7 @@
 .num-value,
 .total-value,
 .container h2,
-img,
+.container #dice-image,
 .btns,
 .results{
     display: flex;
@@ -25,8 +25,12 @@ img,
     font-size: 50px;
     font-weight: bold;
 }
+.container img{
+    margin: auto;
+    height: 150px;
+}
 .btns button{
-    margin: 20px 150px;
+    margin: 0px 150px;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size:25px;
@@ -71,4 +75,9 @@ img,
     line-height: 30px;
     padding: 0px;
     font-family: 'Patrick Hand SC', cursive;
+}
+.dice-values,
+.dice-total{
+    display: flex;
+    flex-direction: row;
 }
