@@ -6,9 +6,12 @@ var rollsDice = document.querySelector('.roll-dice');
 var diceFigure = document.querySelector('.dice-figure')
 var diceImg = document.querySelector('#dice-image');
 var totalFigure = document.querySelector('.total-figure');
+var resetGame = document.querySelector('.reset-game');
+var result = document.querySelector('.result')
 // Event Listeners
 enterButn.addEventListener('click', addName);
 rollsDice.addEventListener('click', rollDice)
+resetGame.addEventListener('click', resets)
 // Functions
 function addName(e){
     e.preventDefault();
@@ -61,4 +64,16 @@ function rollDice(e){
     }else{
         rollsDice.disabled = true
     }
+    if (i===5){
+        if (Addition>=25){
+            result.innerText = "YOU WIN!!!";
+        }else{
+            console.log(Addition);
+            result.innerText = "YOU LOSE";
+        }
+    }
+}
+function resets(e){
+   location.reload();
+
 }

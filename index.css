@@ -14,14 +14,15 @@
 .container h2,
 .container #dice-image,
 .btns,
-.results{
+.resultDiv{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
 }
 .header{
     font-family: 'Patrick Hand SC', cursive;
-    padding: 10px;
+    padding: 10px 0px 0px;
     font-size: 50px;
     font-weight: bold;
 }
@@ -80,4 +81,9 @@
 .dice-total{
     display: flex;
     flex-direction: row;
+}
+.num-value p,
+.total-value p{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
