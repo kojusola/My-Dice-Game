@@ -10,14 +10,14 @@
     <div class="container">
         <header class="header">Dice Game</header>
         <div class="name-input">
-            <input type="text" id="player-name" name="name">
+            <input type="text" id="player-name" name="name" class="player-name" placeholder="Enter Your Name">
             <input type="submit" value="Enter" id="player-name" class="name">
         </div>
         <h2>Your Roll</h2>
         <div class="num-value">
             <p>Dice Values:</p>
             <div class="dice-values">
-                <span></span>
+                <p class="dice-figure">0</p>
                 <p>points</p>
             </div>
         </div>
@@ -25,18 +25,19 @@
         <div class="total-value">
             <p>Total Score:</p>
             <div class="dice-total">
-                <span></span>
+                <p class="total-figure">0</p>
                 <p>points</p>
             </div>
         </div>
         <div class="btns">
-            <button>Roll Dice</button>
-            <button>Reset Game</button>
+            <button class="roll-dice">Roll Dice</button>
+            <button class="reset-game">Reset Game</button>
         </div>
-        <div class="result">
-            <p></p>
+        <div class="resultDiv">
+            <p class="result"></p>
         </div>
     </div>
+    <script src="index.js"></script>
     
 </body>
 </html>

@@ -12,21 +12,26 @@
 .num-value,
 .total-value,
 .container h2,
-img,
+.container #dice-image,
 .btns,
-.results{
+.resultDiv{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px auto;
 }
 .header{
     font-family: 'Patrick Hand SC', cursive;
-    padding: 30px;
+    padding: 10px 0px 0px;
     font-size: 50px;
     font-weight: bold;
 }
+.container img{
+    margin: auto;
+    height: 150px;
+}
 .btns button{
-    margin: 20px 150px;
+    margin: 0px 150px;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     font-size:25px;
@@ -50,6 +55,35 @@ img,
     border-radius: 6px;
     color: #5f5f5f;
 }
-.name-input #player-name{
+.name-input .player-name{
     height: 30px;
+}
+.remov{
+    opacity:0;
+    transition: 2s;
+}
+.player-name::placeholder{
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.player{
+    opacity: 1;
+    transition: 3s;
+}
+.player p{
+    text-transform: capitalize;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0px;
+    font-family: 'Patrick Hand SC', cursive;
+}
+.dice-values,
+.dice-total{
+    display: flex;
+    flex-direction: row;
+}
+.num-value p,
+.total-value p{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
