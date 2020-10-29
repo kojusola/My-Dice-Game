@@ -1,0 +1,55 @@
+/******Google Fonts*****/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&family=Patrick+Hand+SC&display=swap');
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+.header,
+.name-input,
+.num-value,
+.total-value,
+.container h2,
+img,
+.btns,
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    font-family: 'Patrick Hand SC', cursive;
+    padding: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.btns button{
+    margin: 20px 150px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size:25px;
+    background-color:#cc2900;
+    border: 2px solid #cc2900;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    color: #5f5f5f;
+}
+.btns button:hover{
+    color: #ffffff;
+}
+.name-input .name{
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-size:20px;
+    height: 30px;
+    width: 150px;
+    border-radius: 6px;
+    color: #5f5f5f;
+}
+.name-input #player-name{
+    height: 30px;
+}
